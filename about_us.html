@@ -1,0 +1,68 @@
+<head>
+ <meta name="viewport" content="width=device-width, inital-scale=1.0" charset="UTF-8">
+ <title>Notts Nutz</title>
+ <link rel="stylesheet" href="open.css">
+</head>
+
+<body>
+ <header>
+	<div class="navbar">
+		<div class="logo"><a href="index.html"><img src="The_logo.png" style="width:75px;"></a></div>
+		<ul class="links">
+
+			<li><a href="about_us.html">about us<a/></li>
+			<li><a href="loading.html">menu<a/></li>
+			<li><a href="">menu<a/></li>
+			<li><a href="contackt.html">contact us<a/></li>
+
+
+		</ul>
+		<a href="#" class="action_btn">Get STarTed</a>
+		<div class="toggle_btn">
+		 <i class="fa-regular fa-bars">|||</i>
+		</div>
+	</div>
+	<div class="dropdown_menu">
+		
+			<li><a href="about_us.html">about us<a/></li>
+			<li><a href="loading.html">menu<a/></li>
+			<li><a href="">menu<a/></li>
+			<li><a href="contackt.html">contact us<a/></li>
+
+			<li><a href="#" class="action_btn">Get STarTed</a></li>
+
+	</div>
+ </header>
+
+<main>
+	<div class="bg2">
+
+	<section id="hero">
+	<h2>About Us</h2>
+	
+	<p>
+	 The leading specialists in removing and supplying locking wheel nuts from all makes and models.<br /> 
+	We deal with seized, rounded and damaged wheel bolts and nuts as well as lost wheel nut removal keys. <br />
+	Give us a call today to get booked in same day/next day service whether it be 1 wheel or a whole fleet of vehicles.<br />
+	</p>
+	</selction>
+   </div>
+</main>
+
+<script>
+ const toggleBtn = document.querySelector('.toggle_btn')
+ const toggleBtnIcon = document.querySelector('.toggle_btn i')
+ const dropDownMenu = document.querySelector('.dropdown_menu')
+
+ toggleBtn.onclick = function () {
+	dropDownMenu.classList.toggle('open')
+	const isOpen = dropDownMenu.classList.contains('open')
+
+	toggleBtnIcon.classList = isOpen
+	 ? 'fa-solid fa-xmark'
+	 : 'fa-solid fa-bars'
+}
+
+
+</script>
+</body>
