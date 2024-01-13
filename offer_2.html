@@ -1,0 +1,92 @@
+<head>
+ <meta name="viewport" content="width=device-width, inital-scale=1.0" charset="UTF-8">
+ <title>Notts Nutz</title>
+ <link rel="stylesheet" href="open.css">
+</head>
+
+<body onload="getPics()">
+ <header>
+	<div class="navbar">
+		<div class="logo"><a href="index.html"><img src="The_logo.png" style="width:75px;"></a></div>
+		<ul class="links">
+
+			<li><a href="about_us.html">about us<a/></li>
+			<li><a href="loading.html">menu<a/></li>
+			<li><a href="">menu<a/></li>
+			<li><a href="contackt.html">contact us<a/></li>
+
+
+		</ul>
+		<a href="#" class="action_btn">Get STarTed</a>
+		<div class="toggle_btn">
+		 <i class="fa-regular fa-bars">|||</i>
+		</div>
+	</div>
+	<div class="dropdown_menu">
+		
+			<li><a href="about_us.html">about us<a/></li>
+			<li><a href="loading.html">menu<a/></li>
+			<li><a href="">menu<a/></li>
+			<li><a href="contackt.html">contact us<a/></li>
+
+			<li><a href="#" class="action_btn">Get STarTed</a></li>
+
+	</div>
+ </header>
+
+<main>
+	<div class="bg2">
+
+<section id="hero">
+	<t>Now offernig fleet servicing!</t>	
+	
+<div class="offer">
+    <img src="offer.jpg">
+      </div>
+
+	
+	<p>
+	 Multiple package options for all class 4&7 vehicles in your fleet.<br /> 
+	<br />
+	Call us now to discuss how we can save you money year after year by <br />
+	getting your whole fleet (BIG or small) serviced in one great package!<br />
+	</p>
+	</selction>
+
+	
+	
+	</div>
+   </div>
+</main>
+
+<script>
+ function getPics() {}
+ const toggleBtn = document.querySelector('.toggle_btn');
+ const imgs = document.querySelectorAll('.galery img');
+ const toggleBtnIcon = document.querySelector('.toggle_btn i');
+ const dropDownMenu = document.querySelector('.dropdown_menu');
+ const fullPage = document.querySelector('#fullpage');
+
+
+
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPage.style.backgroundImage = 'url(' + img.src + ')';
+    fullPage.style.display = 'block';
+  });
+});
+
+
+ toggleBtn.onclick = function () {
+	dropDownMenu.classList.toggle('open')
+	const isOpen = dropDownMenu.classList.contains('open')
+
+	toggleBtnIcon.classList = isOpen
+	 ? 'fa-solid fa-xmark'
+	 : 'fa-solid fa-bars'
+}
+
+
+</script>
+</body>
