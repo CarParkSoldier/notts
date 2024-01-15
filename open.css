@@ -337,7 +337,7 @@ p{
 	z-index: 10000;
 	border-radius: 130px 0px 0px 0px;
 	cursor: pointer;
-	box-shadow: 0 0 20px 9px #FFFFFF;
+	box-shadow: 0 0 20px 9px #0000FF;
 	font-size: 2em;
 	transition: transform 1.25s;
 	overflow: hidden;
